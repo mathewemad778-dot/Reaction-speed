@@ -1,0 +1,61 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', monospace;
+    overflow-x: hidden;
+}
+
+.glow {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.neon-border {
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+.game-area {
+    background: radial-gradient(circle, rgba(10, 20, 40, 0.9), rgba(5, 10, 20, 1));
+    position: relative;
+}
+
+.shape {
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    position: absolute;
+}
+
+.shape:hover {
+    transform: scale(1.05);
+}
+
+.shape.clicked {
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(0); }
+}
+
+.screen-shake {
+    animation: shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-3px, 0, 0); }
+    40%, 60% { transform: translate3d(3px, 0, 0); }
+}
+
+.leaderboard-item {
+    background: linear-gradient(90deg, rgba(30, 40, 60, 0.7), rgba(20, 30, 50, 0.7));
+    border-left: 4px solid rgba(0, 255, 255, 0.7);
+}

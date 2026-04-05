@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base target="_self">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reaction Speed Arena</title>
+        <meta name="description" content="Test your reaction speed in this addictive neon game">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white">
+        <header class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 bg-cyan-500 rounded-full glow"></div>
+                    <h1 class="text-3xl md:text-4xl font-bold tracking-wider">
+                        <span class="text-cyan-400">REACTION</span>
+                        <span class="text-purple-400">SPEED</span>
+                        <span class="text-green-400">ARENA</span>
+                    </h1>
+                </div>
+                <nav>
+                    <ul id="nav-menu" class="flex gap-6"></ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Stats Panel -->
+                <div class="lg:col-span-1">
+                    <div class="bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl neon-border glow mb-6">
+                        <h2 class="text-xl font-bold mb-4 text-cyan-300">STATS</h2>
+                        <div id="stats-container" class="grid grid-cols-2 gap-4"></div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl neon-border glow mb-6">
+                        <h2 class="text-xl font-bold mb-4 text-purple-300">CONTROLS</h2>
+                        <div id="controls-container" class="flex flex-col gap-4"></div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl neon-border glow">
+                        <h2 class="text-xl font-bold mb-4 text-green-300">LEADERBOARD</h2>
+                        <ul id="leaderboard-list" class="space-y-3"></ul>
+                    </div>
+                </div>
+
+                <!-- Game Arena -->
+                <div class="lg:col-span-2">
+                    <div class="game-area rounded-xl p-6 mb-6 neon-border glow relative overflow-hidden min-h-[500px]">
+                        <div class="absolute top-6 left-6">
+                            <h2 class="text-2xl font-bold text-yellow-300">CLICK THE SHAPES</h2>
+                            <p class="text-gray-400 mt-1">React as fast as you can</p>
+                        </div>
+                        <div id="game-shapes-container" class="absolute inset-0"></div>
+                        <div class="absolute bottom-6 right-6">
+                            <p id="current-time-display" class="text-lg font-semibold text-white"></p>
+                            <p id="difficulty-display" class="text-sm text-gray-400"></p>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-b from-gray-900 to-black p-6 rounded-xl neon-border glow">
+                        <h2 class="text-xl font-bold mb-4 text-yellow-300">GAME LOG</h2>
+                        <ul id="game-log-list" class="space-y-2"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container mx-auto px-4 py-8 mt-12">
+            <div class="border-t border-gray-800 pt-6">
+                <ul id="footer-links" class="flex flex-wrap justify-center gap-6"></ul>
+            </div>
+        </footer>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>
