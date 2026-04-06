@@ -25,8 +25,7 @@ CSS (Tailwind)
 JavaScript
 
 🤖 AI Declaration 
-Used AI to help me in design and give clean layout.
-
+I only used AI tools occasionally for small things like fixing bugs, getting ideas, or improving some parts of the code. Everything was reviewed and edited by me before using it.
 📌 Notes
 
 This is not the final version of the game. The structure, features, and overall design are still being worked on and may be updated or changed over time. The project is mainly focused on experimenting with ideas and improving gameplay step by step.
