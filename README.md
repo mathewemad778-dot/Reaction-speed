@@ -24,7 +24,7 @@ HTML
 CSS (Tailwind)
 JavaScript
 
-AI Declaration :
+🤖 AI Declaration 
 Used AI to help me in design and give clean layout.
 
 📌 Notes
