@@ -11,16 +11,22 @@ The game is functional but still in a testing phase
 Some features are experimental and may change
 UI and animations are still being refined
 Scoring and difficulty systems are being adjusted
+
 🎯 Features (Work in Progress)
 Random shape spawning
 Reaction time tracking
 Difficulty levels (still being tuned)
 Basic stats and game log
 Simple controls to start and reset the game
+
 🛠️ Tech Used
 HTML
 CSS (Tailwind)
 JavaScript
+
+AI Declaration :
+Used AI to help me in design and give clean layout.
+
 📌 Notes
 
 This is not the final version of the game. The structure, features, and overall design are still being worked on and may be updated or changed over time. The project is mainly focused on experimenting with ideas and improving gameplay step by step.
